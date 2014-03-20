@@ -409,6 +409,22 @@
  */
 - (void)addRelationshipConstraintEqualForAttribute:(NSLayoutAttribute)attribute toItem:(id)relatedItem;
 
+///--------------------------
+/// @name Default constraints
+///--------------------------
+
+/**
+ *  Determine the system standard space between the reciver and the specified 
+ *	view.
+ *
+ *	If space could not be determined, returns `CGFLOAT_MIN`.
+ *
+ *  @param targetView View to determine distance between. Can be `self.superview`.
+ *
+ *  @return The `CGFloat` constant for the space.
+ */
+- (CGFloat)defaultSpaceConstraintToView:(UIView *)targetView;
+
 /// ----------------------
 /// @name Find constraints
 /// ----------------------
